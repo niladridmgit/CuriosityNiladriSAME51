@@ -1,0 +1,75 @@
+menu.chip=Chip
+menu.tool=Tool
+menu.protocol=Protocol
+menu.interface=Interface
+menu.cache=Cache
+menu.speed=CPU Speed
+menu.opt=Optimize
+menu.maxqspi=Max QSPI
+menu.usbstack=USB Stack
+menu.debug=Debug
+
+# Curiosity Niladri SAME51 (SAME51J20A)
+# ------------------------------
+Curiosity_Niladri_SAME51.name=Curiosity Niladri SAME51 (SAME51J20A)
+Curiosity_Niladri_SAME51.vid.0=0x03EB
+Curiosity_Niladri_SAME51.pid.0=0x802B
+Curiosity_Niladri_SAME51.vid.1=0x03EB
+Curiosity_Niladri_SAME51.pid.1=0x002B
+Curiosity_Niladri_SAME51.upload.tool=atprogram
+Curiosity_Niladri_SAME51.menu.protocol.nedbg=nedbg
+Curiosity_Niladri_SAME51.upload.protocol=nedbg
+Curiosity_Niladri_SAME51.menu.interface.SWD=SWD
+Curiosity_Niladri_SAME51.upload.interface=SWD
+Curiosity_Niladri_SAME51.menu.chip.SAME51J20A=SAME51J20A
+Curiosity_Niladri_SAME51.build.chip=atsame51j20a
+Curiosity_Niladri_SAME51.upload.maximum_size=507904
+Curiosity_Niladri_SAME51.upload.offset=0x4000
+Curiosity_Niladri_SAME51.upload.use_1200bps_touch=false
+Curiosity_Niladri_SAME51.upload.wait_for_upload_port=false
+Curiosity_Niladri_SAME51.upload.native_usb=false
+Curiosity_Niladri_SAME51.build.mcu=cortex-m4
+Curiosity_Niladri_SAME51.build.usb_product="Curiosity_Niladri_SAME51 (SAME51J20A)"
+Curiosity_Niladri_SAME51.build.usb_manufacturer="Longan-Labs"
+Curiosity_Niladri_SAME51.build.board=CURIOSITYNILADRISAME51
+Curiosity_Niladri_SAME51.build.core=arduino
+Curiosity_Niladri_SAME51.build.extra_flags=-D__SAME51J20A__ -DDEEZUMS_DEEZIGNS_SAME51J20A_M4_EXPRESS -D__SAMD51__ {build.usb_flags} -D__FPU_PRESENT -DARM_MATH_CM4 -DCRYSTALLESS -mfloat-abi=hard -mfpu=fpv4-sp-d16
+Curiosity_Niladri_SAME51.build.ldscript=linker_scripts/gcc/flash_without_bootloader.ld
+Curiosity_Niladri_SAME51.build.openocdscript=openocd_scripts/arduino_zero.cfg
+Curiosity_Niladri_SAME51.build.variant=curiosityniladrisame51
+Curiosity_Niladri_SAME51.build.variant_system_lib=
+Curiosity_Niladri_SAME51.build.vid=0x03EB
+Curiosity_Niladri_SAME51.build.pid=0x802B
+Curiosity_Niladri_SAME51.compiler.arm.cmsis.ldflags="-L{runtime.tools.CMSIS-5.4.0.path}/CMSIS/Lib/GCC/" "-L{build.variant.path}" -larm_cortexM4lf_math -mfloat-abi=hard -mfpu=fpv4-sp-d16
+Curiosity_Niladri_SAME51.menu.cache.on=Enabled
+Curiosity_Niladri_SAME51.menu.cache.on.build.cache_flags=-DENABLE_CACHE
+Curiosity_Niladri_SAME51.menu.cache.off=Disabled
+Curiosity_Niladri_SAME51.menu.cache.off.build.cache_flags=
+Curiosity_Niladri_SAME51.menu.speed.120=120 MHz (standard)
+Curiosity_Niladri_SAME51.menu.speed.120.build.f_cpu=120000000L
+Curiosity_Niladri_SAME51.menu.speed.150=150 MHz (overclock)
+Curiosity_Niladri_SAME51.menu.speed.150.build.f_cpu=150000000L
+Curiosity_Niladri_SAME51.menu.speed.180=180 MHz (overclock)
+Curiosity_Niladri_SAME51.menu.speed.180.build.f_cpu=180000000L
+Curiosity_Niladri_SAME51.menu.speed.200=200 MHz (overclock)
+Curiosity_Niladri_SAME51.menu.speed.200.build.f_cpu=200000000L
+Curiosity_Niladri_SAME51.menu.opt.small=Small (-Os) (standard)
+Curiosity_Niladri_SAME51.menu.opt.small.build.flags.optimize=-Os
+Curiosity_Niladri_SAME51.menu.opt.fast=Fast (-O2)
+Curiosity_Niladri_SAME51.menu.opt.fast.build.flags.optimize=-O2
+Curiosity_Niladri_SAME51.menu.opt.faster=Faster (-O3)
+Curiosity_Niladri_SAME51.menu.opt.faster.build.flags.optimize=-O3
+Curiosity_Niladri_SAME51.menu.opt.fastest=Fastest (-Ofast)
+Curiosity_Niladri_SAME51.menu.opt.fastest.build.flags.optimize=-Ofast
+Curiosity_Niladri_SAME51.menu.opt.dragons=Eleven (-Ofast -funroll-loops)
+Curiosity_Niladri_SAME51.menu.opt.dragons.build.flags.optimize=-Ofast -funroll-loops
+Curiosity_Niladri_SAME51.menu.maxqspi.50=50 MHz (standard)
+Curiosity_Niladri_SAME51.menu.maxqspi.50.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=50000000
+Curiosity_Niladri_SAME51.menu.maxqspi.fcpu=CPU Speed / 2
+Curiosity_Niladri_SAME51.menu.maxqspi.fcpu.build.flags.maxqspi=-DVARIANT_QSPI_BAUD_DEFAULT=({build.f_cpu})
+Curiosity_Niladri_SAME51.menu.debug.off=Off
+Curiosity_Niladri_SAME51.menu.debug.on=On
+Curiosity_Niladri_SAME51.menu.debug.on.build.flags.debug=-g
+
+
+
