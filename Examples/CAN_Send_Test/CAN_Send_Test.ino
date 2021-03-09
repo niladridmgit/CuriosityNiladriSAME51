@@ -1,6 +1,4 @@
 /*
-  CAN 2.0 send example for CANbed M4
-  
   begin(uint8_t idmodeset, uint32_t speedset, enum mcan_can_mode canmode)
   
   @idmodeset:

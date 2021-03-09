@@ -1,10 +1,3 @@
-/**
- * @file
- * @author     Scott Price <prices@hugllc.com>
- * @copyright  © 2017 Hunt Utilities Group, LLC
- * @brief      The include file for using the SAMC
- * @details
- */
 #ifndef _SAME51_CAN_H_
 #define _SAME51_CAN_H_
 
