@@ -109,14 +109,14 @@ static const uint8_t ATN = PIN_ATN;
  */
 #define SPI_INTERFACES_COUNT     1
 
-#define PIN_SPI_MISO         (23u)
-#define PIN_SPI_SCK          (24u)
-#define PIN_SPI_MOSI         (25u)
+#define PIN_SPI_MISO         (9u)
+#define PIN_SPI_SCK          (40u)
+#define PIN_SPI_MOSI         (39u)
 #define PERIPH_SPI           sercom1
 #define PAD_SPI_TX           SPI_PAD_0_SCK_1
 #define PAD_SPI_RX           SERCOM_RX_PAD_3
 
-static const uint8_t SS	  = PIN_A2 ;	
+static const uint8_t SS	  = (7u) ;	
 static const uint8_t MOSI = PIN_SPI_MOSI ;
 static const uint8_t MISO = PIN_SPI_MISO ;
 static const uint8_t SCK  = PIN_SPI_SCK ;
