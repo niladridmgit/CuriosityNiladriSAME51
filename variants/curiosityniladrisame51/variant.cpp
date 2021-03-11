@@ -112,6 +112,18 @@ void SERCOM0_0_Handler()
 {
   Serial.IrqHandler();
 }
+void SERCOM0_1_Handler()
+{
+  Serial.IrqHandler();
+}
+void SERCOM0_2_Handler()
+{
+  Serial.IrqHandler();
+}
+void SERCOM0_3_Handler()
+{
+  Serial.IrqHandler();
+}
 
 void SERCOM5_0_Handler()
 {
